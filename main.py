@@ -367,8 +367,8 @@ def run(model):
             temp = np.shape(batch_triples[batch_n])[0]
             batch_index = np.copy(idx[0:temp])
             selected_batch = np.copy(batch_triples[batch_n])
-            selected_batch = torch.from_numpy(selected_batch)
-            selected_batch.to(model.device)
+            #selected_batch = torch.from_numpy(selected_batch)
+            #selected_batch.to(model.device)
             p_idx = np.copy(selected_batch)
             #print(type(selected_batch))
             if batch_n % 2 == 0:
