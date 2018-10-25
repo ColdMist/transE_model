@@ -37,7 +37,7 @@ class TransE(nn.Module):
         self.relation_vec = nn.Embedding(self.n_relation, self.embedding_dim)
         #self.relation_vec.requires_grad = True
         self.init_weights()
-        self.device = torch.device('cuda')
+        self.device = torch.device('cpu')
 
         # Read training, validation and testing data (triples)
 
