@@ -90,13 +90,13 @@ class TransE(nn.Module):
     def __init__(self):
         super(TransE,self).__init__()
         self.margin = 2.0
-        self.embedding_dim = 20
-        self.n_batch = 100
+        self.embedding_dim = 50
+        self.n_batch = 10000
         self.batch_size = 1
-        self.n_epoch = 5
+        self.n_epoch = 1000
         self.n_entity = 1
         self.n_relation = 1
-        self.l_rate = 0.1
+        self.l_rate = 0.01
         self.train_triple = 1
         self.test_triple = 1
         self.valid_triple = 1
