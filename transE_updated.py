@@ -96,7 +96,7 @@ class TransE(nn.Module):
         self.n_epoch = 5000
         self.n_entity = 1
         self.n_relation = 1
-        self.l_rate = 0.01
+        self.l_rate = 0.1
         self.train_triple = 1
         self.test_triple = 1
         self.valid_triple = 1
