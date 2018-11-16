@@ -93,7 +93,7 @@ class TransE(nn.Module):
         self.embedding_dim = 50
         self.n_batch = 100
         self.batch_size = 1
-        self.n_epoch = 1000
+        self.n_epoch = 5000
         self.n_entity = 1
         self.n_relation = 1
         self.l_rate = 0.01
