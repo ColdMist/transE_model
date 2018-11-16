@@ -91,7 +91,7 @@ class TransE(nn.Module):
         super(TransE,self).__init__()
         self.margin = 2.0
         self.embedding_dim = 50
-        self.n_batch = 10000
+        self.n_batch = 100
         self.batch_size = 1
         self.n_epoch = 1000
         self.n_entity = 1
